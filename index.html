@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/icons/logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="./styles/main.css">
 
     <title>Home</title>
@@ -139,7 +140,137 @@
         </div>
 
     </section>
+    <section class="fr-sec-4 container">
+        <div class="fr-sec-4__left">
+            <h1>See our <br> latest video</h1>
+            <div class="fr-sec-4__left__img-bg">
+                <img src="./assets/imgs/kaktus.svg" alt="">
+
+            </div>
+
+
+        </div>
+        <div class="fr-sec-4__right">
+            <div class="fr-sec-4__right__img-bg">
+                <img src="./assets/imgs/kaktus2.svg" alt="">
+
+            </div>
+            <p>lants are predominantly photosynthetic eukaryotes of the kingdom Plantae. Historically, the plant kingdom
+                massed all living things</p>
+
+        </div>
+
+    </section>
+    <section class="fr-sec-5 container">
+        <div class="fr-sec-5__left">
+            <div class="fr-sec-5__left__img-bg">
+                <img src="./assets/imgs/fr-sec-5-img1.svg" alt="">
+                <div>
+                    <h3>Fringilla Augue</h3>
+                    <p>that were not animals, and included algae and however</p>
+                    <b>$35.00</b>
+                </div>
+
+            </div>
+            <div class="fr-sec-5__left__img-bg">
+                <img src="./assets/imgs/fr-sec-5-img2.svg" alt="">
+                <div>
+                    <h3>Faded Short</h3>
+                    <p>that were not animals, and included algae and however</p>
+                    <b>$35.00</b>
+                </div>
+
+            </div>
+            <div class="bottom">
+                <p>that were not animals, and included algae and fungi however, all current definitions </p>
+            </div>
+
+
+        </div>
+        <div class="fr-sec-5__right">
+            <h1>Get our greatest plants</h1>
+            <div class="fr-sec-5__right__img-bg">
+                <img src="./assets/imgs/fr-sec-5-img3.svg" alt="">
+                <div>
+                    <h3>Faded Short</h3>
+                    <p>that were not animals, and included algae and however</p>
+                    <b>$35.00</b>
+                </div>
+            </div>
+            <button>Order Now</button>
+
+        </div>
+
+    </section>
+    <footer>
+        <div class="container footer">
+
+            <img src="./assets/icons/footer-logo.svg" alt="">
+            <div class="footer__links">
+                <a href="#">ABOUT US</a>
+                <a href="#">Testimonial</a>
+                <a href="#">CONTACT US</a>
+                <a href="#">Feature</a>
+
+            </div>
+            <div class="footer__links">
+                <a href="#">ABOUT US</a>
+                <a href="#">Testimonial</a>
+                <a href="#">CONTACT US</a>
+
+
+            </div>
+            <div class="footer__links">
+                <a href="#">FOLLOW US</a>
+                <div class="footer__links__icons-sec">
+                    <div class="footer__links__icons-sec__icon">
+                        <img src="./assets/icons/insta.svg" alt="">
+
+                    </div>
+                    <div class="footer__links__icons-sec__icon">
+                        <img src="./assets/icons/facebook 1.svg" alt="">
+
+                    </div>
+                    <div class="footer__links__icons-sec__icon">
+                        <img src="./assets/icons/twitter 1.svg" alt="">
+
+                    </div>
+                    <div class="footer__links__icons-sec__icon">
+                        <img src="./assets/icons/youtube 1.svg" alt="">
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <div class="back-to-top" id="backToTop">
+        ↑
+    </div>
 
 </body>
+<script>
+    const backToTop = document.getElementById('backToTop');
+
+    // Show the button when scrolling down
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            backToTop.classList.add('visible');
+        } else {
+            backToTop.classList.remove('visible');
+        }
+    });
+
+    // Scroll to the top when the button is clicked
+    backToTop.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth', // Smooth scrolling
+        });
+    });
+
+</script>
 
 </html>

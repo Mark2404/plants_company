@@ -25,6 +25,7 @@ body {
     &:hover {
         box-shadow: 0 0 10px 5px #63c92f;
         background: #aef007;
+        transition: all 0.3s ease-in-out;
     }
 }
 
@@ -300,5 +301,267 @@ header {
             justify-content: center;
         }
 
+    }
+}
+
+.fr-sec-4 {
+    margin-top: 100px;
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    justify-content: center;
+
+    &__left {
+        h1 {
+            font-family: var(--font-family);
+            font-weight: 800;
+            font-size: 57px;
+            line-height: 140%;
+            color: #081800;
+            margin-bottom: 30px;
+            width: 100%;
+
+        }
+
+        &__img-bg {
+            width: 499px;
+            height: 442px;
+            background: #f7ffec;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &__right {
+        &__img-bg {
+            width: 528px;
+            height: 543px;
+            background: #f7ffec;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+
+        }
+
+        p {
+            font-family: var(--font-family);
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 160%;
+            color: #081800;
+            opacity: 0.6;
+        }
+    }
+}
+
+.fr-sec-5 {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+
+    &__left {
+        .bottom {
+            p {
+                font-family: var(--font-family);
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 160%;
+                color: #101c02;
+                opacity: 0.6;
+                width: 70%;
+            }
+
+        }
+
+
+        &__img-bg {
+            width: 527px;
+            height: 215px;
+            background: #f7ffec;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            padding: 20px;
+            margin-bottom: 20px;
+
+            h3 {
+                font-family: var(--font-family);
+                font-weight: 600;
+                font-size: 32px;
+                line-height: 160%;
+                color: #081800;
+            }
+
+            p {
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 160%;
+                color: #101c02;
+                opacity: 0.6;
+            }
+
+            b {
+                font-family: var(--font-family);
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 160%;
+                color: #418a1c;
+            }
+        }
+
+
+    }
+
+    &__right {
+        h1 {
+            font-family: var(--font-family);
+            font-weight: 800;
+            font-size: 57px;
+            line-height: 140%;
+            color: #081800;
+            margin-bottom: 60px;
+        }
+
+        &__img-bg {
+            width: 527px;
+            height: 215px;
+            background: #f7ffec;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            padding: 20px;
+            margin-bottom: 20px;
+
+            h3 {
+                font-family: var(--font-family);
+                font-weight: 600;
+                font-size: 32px;
+                line-height: 160%;
+                color: #081800;
+            }
+
+            p {
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 160%;
+                color: #101c02;
+                opacity: 0.6;
+            }
+
+            b {
+                font-family: var(--font-family);
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 160%;
+                color: #418a1c;
+            }
+        }
+
+        button {
+            @extend .primary-button;
+            padding: 20px 30px;
+            width: 153px;
+            height: 63px;
+            margin-top: 30px;
+        }
+
+    }
+}
+
+footer {
+    background: #f7ffec;
+    margin-top: 100px;
+
+    padding: 20px 0;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 130px;
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        a {
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 160%;
+            color: #000a01;
+            opacity: 0.6;
+            text-decoration: none;
+        }
+
+        a:nth-child(1) {
+            font-family: var(--font-family);
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 160%;
+            color: #000a01;
+            opacity: 1 !important;
+
+        }
+
+        &__icons-sec {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            &__icon {
+                cursor: pointer;
+                border-radius: 100%;
+                background-color: #000a01;
+                width: 37px;
+                height: 37px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+
+    }
+}
+
+.back-to-top {
+    width: 40px;
+    height: 40px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 130%;
+    color: #fff;
+    box-shadow: 8px 8px 0 0 #51c815;
+    background: #081800;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px; // Position at the bottom-right corner
+    right: 20px;
+    border-radius: 50%; // Make it circular
+    opacity: 0; // Hidden by default
+    visibility: hidden;
+    transition: all 0.3s ease;
+
+    &:hover {
+        transform: scale(1.1); // Slight zoom on hover
+        background: #2a3b00; // Slightly lighter background
+        box-shadow: 0 0 10px 5px #51c815; // Glow effect
+    }
+
+    &.visible {
+        opacity: 1;
+        visibility: visible;
     }
 }
